@@ -1,2 +1,4 @@
 # Calendar_app
-A repo sued for a calendar app
+A repo used for a calendar app
+
+https://www.electronjs.org/docs/latest/tutorial/tutorial-packaging 

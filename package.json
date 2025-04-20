@@ -1,0 +1,25 @@
+{
+  "name": "calendar_app",
+  "version": "1.0.0",
+  "description": "A repo sued for a calendar app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mambulik/Calendar_app.git"
+  },
+  "keywords": [],
+  "author": "Malik Mburu",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mambulik/Calendar_app/issues"
+  },
+  "homepage": "https://github.com/mambulik/Calendar_app#readme",
+  "devDependencies": {
+    "electron": "^35.2.0"
+  }
+}
