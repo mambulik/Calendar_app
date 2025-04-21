@@ -37,5 +37,5 @@ app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
 })
 /* 
-Closing the app when all bindows are closed.
+Closing the app when all bindows are closed. darwin  = macOS
 */

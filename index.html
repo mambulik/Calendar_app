@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<htm lang ="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
       http-equiv="Content-Security-Policy"
@@ -11,12 +12,52 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Hello from Electron renderer!</title>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <title>My timeline</title>
   </head>
+
+
   <body>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
-    <p id="info"></p>
+    <div class="app">
+        <div class="sidebar desktop-only">
+          <div class="sidebar__logo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+          <span class="sidebar__title">Timeline</span>
+          </div>
+
+          <button class="button button--primary button--lg">Create Event</button>
+
+        </div>
+
+        <main class="main">
+            <div class="nav">
+                <button class="button button--icon button--secondary mobile-only"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="button__icon"><path d="M3 12h18"/><path d="M3 18h18"/><path d="M3 6h18"/></svg></button>
+                <div class="nav__date-info">
+                    <div class="nav__controls">
+                        <button class="button button--secondary desktop-only">Today</button>
+                        <button class="button button--icon button--secondary mobile-only "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="button__icon"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg></button>
+                        <div class="nav__arrows">
+                            <button class="button button--icon button--secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="button__icon"><path d="m15 18-6-6 6-6"/></svg></button>
+                            <button class="button button--icon button--secondary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="button__icon"><path d="m9 18 6-6-6-6"/></svg></button>
+                        </div>
+                    </div>
+                    <time class="nav__date">temp date here</time>
+                </div>
+
+                <div class="select desktop-only">
+                  <select class="select__select">
+                    <option value="day">Day</option>
+                    <option value="Week">Week</option>
+                    <option value="Month" selected>Month</option>
+                  </select>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="select__icon"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+            </div> 
+            <div class="calendar">calendar</div>
+        </main>
+    </div>
+
   </body>
-  <script src="./renderer.js"></script>
+
+
+  <script defer src="./renderer.js"></script>
 </html>

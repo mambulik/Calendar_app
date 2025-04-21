@@ -1,0 +1,56 @@
+@import "./nav.css";
+@import "./sidebar.css";
+@import "./button.css";
+@import "./responsive.css";
+@import "./select.css";
+
+* {
+    font-family: ui-sans-serif,system-ui,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text-dark);
+}
+
+
+:root {
+    --color-text-dark: rgb(71, 28, 88);
+    --color-gray-300: #2e323d;
+    --font-size-sm: 0.875rem;
+    --border-radius-md: 0.25rem;
+    --line-height-sm: 1.25rem;
+    --duration-sm: 100ms;
+    --color-gray-100: gray;
+    --color-white: rgb(213, 213, 213);
+    --font-size-lg: 1.125rem;
+    --line-height-lg: 1.75rem;
+    --color-blue-500: rgb(121, 121, 250);
+    --color-blue-600: rgb(15, 15, 218);
+    --color-text-light: rgb(212, 203, 243);
+}
+
+.app {
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.calendar {
+height: 100%;
+}
+
+@media (min-width: 768px) {
+    .app {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
