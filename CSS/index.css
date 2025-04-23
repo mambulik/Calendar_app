@@ -6,6 +6,7 @@
 @import "./month_calendar.css";
 @import "./event.css";
 @import "./event_list.css";
+@import "./week_calendar.css";
 
 * {
     font-family: ui-sans-serif,system-ui,sans-serif;
@@ -34,11 +35,13 @@ body {
     --line-height-lg: 1.75rem;
     --color-blue-500: rgb(121, 121, 250);
     --color-blue-600: rgb(15, 15, 218);
-    --color-text-light: rgb(212, 203, 243);
+    --color-text-light: rgb(177, 173, 191);
     --font-size-md: 1rem;
     --line-height-md: 1.5rem;
     --font-size-xs: 0.75rem;
     --line-height-xs: 1rem;
+    --color-gray-500: rgb(98, 97, 97);
+    --box-shadow-md:0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1 px rgba(0, 0, 0, 0.1);
 }
 
 .app {
