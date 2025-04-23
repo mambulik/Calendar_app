@@ -12,12 +12,16 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-        preload: path.join(__dirname, 'preload.js')
+        //preload: path.join(__dirname, 'preload.js')
+        nodeIntegration: true,
       }
   })
 
-  win.loadFile('index.html')
+  win.loadFile(path.join(__dirname, 'index.html'));
+  win.webContents.openDevTools({ mode: 'detach' });
 }
+
+
 /* 
 The createWindow() function loads your web page into a new BrowserWindow instance.
 
@@ -26,7 +30,7 @@ The path.join API joins multiple path segments together, creating a combined pat
 */
 
 app.whenReady().then(() => {
-    ipcMain.handle('ping', () => 'pong')
+    //ipcMain.handle('ping', () => 'pong')
     createWindow()
 })
 /* 
@@ -39,3 +43,4 @@ app.on('window-all-closed', () => {
 /* 
 Closing the app when all bindows are closed. darwin  = macOS
 */
+

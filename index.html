@@ -2,17 +2,8 @@
 <htm lang ="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <link rel="stylesheet" href="/CSS/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./CSS/index.css" />
     <title>My timeline</title>
   </head>
 
@@ -44,7 +35,7 @@
                 </div>
 
                 <div class="select desktop-only">
-                  <select class="select__select">
+                  <select class="select__select" data-view-select>
                     <option value="day">Day</option>
                     <option value="Week">Week</option>
                     <option value="Month" selected>Month</option>
@@ -52,12 +43,591 @@
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="select__icon"><path d="m6 9 6 6 6-6"/></svg>
                 </div>
             </div> 
-            <div class="calendar">calendar</div>
-        </main>
-    </div>
+            <div class="calendar">
+              <div class = "month-calendar month-calendar-five-week" data-month-calendar>
+                <ul class = "month-calendar__day-of-week-list">
+                  <li class="month-calendar__day-of-week ">Sun</li>
+                  <li class="month-calendar__day-of-week ">Mon</li>
+                  <li class="month-calendar__day-of-week ">Tue</li>
+                  <li class="month-calendar__day-of-week ">Wed</li>
+                  <li class="month-calendar__day-of-week ">Thu</li>
+                  <li class="month-calendar__day-of-week ">Fri</li>
+                  <li class="month-calendar__day-of-week ">Sat</li>
+                </ul>
 
-  </body>
+                <div class="month-calendar__day-list-wrapper">
+                  <ul class = "month-calendar__day-list">
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">30</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list">
+                          <li class="event-list__item">
+                            <button class="event event--filled">
+                              <span class="even__color"></span>
+                              <span class="title">EVENT 1</span>
+                            </button>
+                          </li>
+                          <li class="event-list__item">
+                            <button class="event">
+                              <span class="even__color"></span>
+                              <span class="title">EVENT 2</span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">1</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">2</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">3</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">4</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">5</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">6</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">7</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">8</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">9</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">10</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">11</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">12</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">13</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">14</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">15</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">16</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">17</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">18</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">19</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">20</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">21</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">22</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">23</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">24</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">25</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">26</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">27</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">28</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">29</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">30</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">31</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">1</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">2</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                    <li class="month-calendar__day ">
+                      <button class = "month-calendar__day-label">3</button>
+                      <div class="month-calendar__event-list-wrapper">
+                        <ul class="event-list"></ul>
+                      </div>
+                    </li>
+                </div>
+              </div>
+
+              <div class="week--calendar" data-week-calendar style="display: none">
+                <ul class="week--calendar__day-of-week-list">
+                  <li class="week--calendar__day-of-week">
+                    <button class="week--calendar__day-of-week-button">
+                      <span class="week--calendar__day-of-week-day">Sun</span>
+                      <span class="week--calendar__day-of-week-number">7</span>
+                    </button>
+                  </li>
+                  <li class="week--calendar__day-of-week">
+                    <button class="week--calendar__day-of-week-button">
+                      <span class="week--calendar__day-of-week-day">Mon</span>
+                      <span class="week--calendar__day-of-week-number">8</span>
+                    </button>
+                  </li>
+                  <li class="week--calendar__day-of-week">
+                    <button class="week--calendar__day-of-week-button">
+                      <span class="week--calendar__day-of-week-day">Tue</span>
+                      <span class="week--calendar__day-of-week-number">9</span>
+                    </button>
+                  </li>
+                  <li class="week--calendar__day-of-week">
+                    <button class="week--calendar__day-of-week-button">
+                      <span class="week--calendar__day-of-week-day">Wed</span>
+                      <span class="week--calendar__day-of-week-number">10</span>
+                    </button>
+                  </li>
+                  <li class="week--calendar__day-of-week">
+                    <button class="week--calendar__day-of-week-button">
+                      <span class="week--calendar__day-of-week-day">Thu</span>
+                      <span class="week--calendar__day-of-week-number">11</span>
+                    </button>
+                  </li>
+                  <li class="week--calendar__day-of-week">
+                    <button class="week--calendar__day-of-week-button">
+                      <span class="week--calendar__day-of-week-day">Fri</span>
+                      <span class="week--calendar__day-of-week-number">12</span>
+                    </button>
+                  </li>
+                  <li class="week--calendar__day-of-week">
+                    <button class="week--calendar__day-of-week-button">
+                      <span class="week--calendar__day-of-week-day">Sat</span>
+                      <span class="week--calendar__day-of-week-number">13</span>
+                    </button>
+                  </li>
+                </ul>
+
+                <ul class="week--calendar__all-day-list">
+                  <li class="week--calendar__all-day-list-item">
+                    <ul class="event-list">
+                      <li class="event-list__item">
+                        <button class="event event--filled">
+                          <span class="even__color"></span>
+                          <span class="title">EVENT 1</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="week--calendar__all-day-list-item">
+                    <ul class="event-list"></ul>
+                  </li>
+                  <li class="week--calendar__all-day-list-item">
+                    <ul class="event-list"></ul>
+                  </li>
+                  <li class="week--calendar__all-day-list-item">
+                    <ul class="event-list"></ul>
+                  </li>
+                  <li class="week--calendar__all-day-list-item">
+                    <ul class="event-list"></ul>
+                  </li>
+                  <li class="week--calendar__all-day-list-item">
+                    <ul class="event-list"></ul>
+                  </li>
+                  <li class="week--calendar__all-day-list-item">
+                    <ul class="event-list"></ul>
+                  </li>
+                </ul>
+
+                <div class="week--calendar__content">
+                  <div class="week--calendar__content-inner">
+                    <ul class="week--calendar__time-list">
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">0:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">1:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">2:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">3:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">4:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">5:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">6:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">7:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">8:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">9:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">10:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">11:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">12:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">13:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">14:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">15:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">16:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">17:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">18:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">19:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">20:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">21:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">22:00</time>
+                      </li>
+                      <li class="week--calendar__time-item">
+                        <time class="week--calendar__time">23:00</time>
+                      </li>
+                    </ul>
+
+                    <div class="week--calendar__columns">
+                        <div class="week--calendar__column">
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                        </div>
+                        <div class="week--calendar__column">
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                        </div>
+                        <div class="week--calendar__column">
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                        </div>
+                        <div class="week--calendar__column">
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                        </div>
+                        <div class="week--calendar__column">
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                        </div>
+                        <div class="week--calendar__column">
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                        </div>
+                        <div class="week--calendar__column">
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                          <div class="week--calendar__cell"></div>
+                        </div>
+                      </div>
+                   </div>
+                </div>
+              </div>
+          </main>
+      </div>
+    </body>
 
 
-  <script defer src="./renderer.js"></script>
+    <script defer src="./JS/renderer.js" type="module"></script>
 </html>
