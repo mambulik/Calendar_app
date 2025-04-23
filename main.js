@@ -39,3 +39,4 @@ app.on('window-all-closed', () => {
 /* 
 Closing the app when all bindows are closed. darwin  = macOS
 */
+

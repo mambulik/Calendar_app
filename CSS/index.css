@@ -3,6 +3,9 @@
 @import "./button.css";
 @import "./responsive.css";
 @import "./select.css";
+@import "./month_calendar.css";
+@import "./event.css";
+@import "./event_list.css";
 
 * {
     font-family: ui-sans-serif,system-ui,sans-serif;
@@ -20,7 +23,7 @@ body {
 
 :root {
     --color-text-dark: rgb(71, 28, 88);
-    --color-gray-300: #2e323d;
+    --color-gray-300: #a3a4a7;
     --font-size-sm: 0.875rem;
     --border-radius-md: 0.25rem;
     --line-height-sm: 1.25rem;
@@ -32,6 +35,10 @@ body {
     --color-blue-500: rgb(121, 121, 250);
     --color-blue-600: rgb(15, 15, 218);
     --color-text-light: rgb(212, 203, 243);
+    --font-size-md: 1rem;
+    --line-height-md: 1.5rem;
+    --font-size-xs: 0.75rem;
+    --line-height-xs: 1rem;
 }
 
 .app {
